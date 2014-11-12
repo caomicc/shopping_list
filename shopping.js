@@ -14,28 +14,27 @@ $('button.add').click(function() {
 if ( $('.I').val().trim().length == 0 ) {
 	$("#error").show();	  
 } else { $('ul').append(
-	'<li class="item">' + $('.I').val() 
-	+ '<i class="fa fa-trash "></i></li>'    );
+	'<li class="item">' + '<p>' + $('.I').val() 
+	+ '</p>' + '<i class="fa fa-trash "></i></li>'    );
 	  }
 
 						});
-});
 
-
-//change class:
-$('ul').on('click', '.item', function(event){
-	event.preventDefault;
-	$(this).toggleClass('strike'); 
+//add item:
+$('.item').on('click', function(){
 	
-});
+	event.preventDefault;
+	$(this).closest('li').toggleClass('strike') 
+	
+	});
 
 //remove item:
 $('ul').on('click', 'i', function(event){
 	event.preventDefault;
 	$(this).closest('li').remove();
+	});
+
 });
-
-
 
 
 

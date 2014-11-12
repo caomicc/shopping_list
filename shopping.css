@@ -78,11 +78,11 @@ border-radius: 1em;margin-top: 5px;}
 
 
 .strike {background-color:green; 
-	display:none;
+	
 	}
-/*.strike:before {display:none;
+.strike:before {
     content: " \2713";
     position: relative;
    color:red;
-}*/
+}
 
