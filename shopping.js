@@ -23,13 +23,15 @@ if ( $('.I').val().trim().length == 0 ) {
 
 
 //change class:
-$('ul').on('click', 'li', function(){
+$('ul').on('click', '.item', function(event){
+	event.preventDefault;
 	$(this).toggleClass('strike'); 
 	
 });
 
 //remove item:
-$('ul').on('click', 'i', function(){
+$('ul').on('click', 'i', function(event){
+	event.preventDefault;
 	$(this).closest('li').remove();
 });
 
