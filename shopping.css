@@ -1,45 +1,76 @@
 body {background-color: aqua;}
-#main {
-	width:100%;
-	margin: 10% auto;}
-#main:first-child{
-	width:40%;
-	margin-left:20%;	
-	background-color: aqua;
-	background-image: url(refrigerator_outline.png);
-	background-size: 100% 800px;
-	background-repeat: no-repeat;
+#main {background-image: url(IMG_0660.jpg);
+	background-size: 60%;
 	background-position: center;
-	height:800px;
+	background-repeat: no-repeat;
+	padding:10%;	
+	box-shadow: 5px 5px 5px gray;
+	
+	border: 3px inset white;
+	width:60%;
+	margin-top: 10%;
+	margin-left: 15%;
+	margin-right: auto;
+position:absolute;}
+	
+
+#main > div{
+	position:relative;
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0,.2);
 	text-align: center;
-	position:absolute;}
+	box-shadow: 0px 0px 100px white;
+	padding:10px 0px;
+	}
 #main h1 {
 	color:purple;
-	padding: 100px 0 0 0;
+	padding: 10px;
 	font-size: 2em;
+	background-color: white;
+	border:2px ridge black;
+	border-radius: 2em;
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+
 	}
 #input {
-	padding-top: 100px;
+	padding:50px;
+	padding-bottom:20px;
 	
-	}	
+
+	}
+#input input {
+	text-align: center;
+	width:60%;
+}	
 #list {
 	position:center;
 	width:60%;
 	margin:0 auto;
-	padding-top:50px ;
+	padding-top:20px ;
 	}	
 .item {
 	padding:5px 0px;
 	background-color: yellow;
 	border: 2px solid black;
 	border-top: 0px solid black;
+	border-radius: 1em;
 }
+
+.item:before {
+	content: " \2003";
+    position: relative;
+	}
 .item p {
 	display:inline;padding-right: 10px;
 	}
 .item:first-child{
 	border-top: 2px solid black;
 	}
+
 
 .strike{background-color:green; 
 	}
