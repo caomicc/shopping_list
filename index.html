@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="shopping.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="shopping.js"></script>
 </head>
 <body>
@@ -15,31 +16,17 @@
 		<h1> Shopping list</h1>
 
 		<div id="input">
-			<p>Add Items Here</p>
+			<input class="I" type="text" placeholder="add items"></input><button class="add" >Add</button>
+			<p id="error">Whoops, nothing here.</p>
 		</div>
 		
 		<div id="list">
 			<ul>
-				<li class="item new">
+				<li class="item ">
 					<p>Butter</p>
-						<i class="fa fa-trash fa-lg">a</i>
+						<i class="fa fa-trash ">a</i>
 				</li>
-				<li class="item new">
-					<p>Butter</p>
-						<i class="fa fa-trash fa-lg">a</i>
-				</li>
-				<li class="item new">
-						<p>Butter</p>
-						<i class="fa fa-trash fa-lg">a</i>
-				</li>
-				<li class="item strike">
-						<p>Butter</p>
-						<i class="fa fa-trash fa-lg">a</i>
-				</li>
-				<li class="item strike">
-						<p>Butter</p>
-						<i class="fa fa-trash fa-lg">a</i>
-				</li>
+				
 
 		</div>
 	  </div>
