@@ -21,11 +21,11 @@ if ( $('.I').val().trim().length == 0 ) {
 						});
 
 //add item:
-$('.item').on('click', function(){
+$('ul').on('click', 'li', function(){
 	
 	event.preventDefault;
-	$(this).closest('li').toggleClass('strike') 
-	
+	$(this).toggleClass('strike'); 
+	$(this).find('i').toggleClass('fa-trash').toggleClass('fa-trash-o');
 	});
 
 //remove item:
