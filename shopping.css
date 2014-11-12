@@ -46,13 +46,18 @@ position:absolute;}
 	text-align: center;
 	width:60%;
 }	
+#error {display: none;
+color:purple;
+background-color: white;
+border:2px solid black;
+border-radius: 1em;margin-top: 5px;}
 #list {
 	position:center;
 	width:60%;
 	margin:0 auto;
 	padding-top:20px ;
 	}	
-.item {
+.item {cursor:pointer;
 	padding:5px 0px;
 	background-color: yellow;
 	border: 2px solid black;
@@ -72,11 +77,12 @@ position:absolute;}
 	}
 
 
-.strike{background-color:green; 
+.strike {background-color:green; 
+	display:none;
 	}
-.strike:before {
+/*.strike:before {display:none;
     content: " \2713";
     position: relative;
    color:red;
-}
+}*/
 
