@@ -1,20 +1,23 @@
-body {background-color: purple;}
-#main {background-image: url(IMG_0660.jpg);
-	background-size: 60%;
+body {
+	background-color: purple;
+	font-family: 'Luckiest Guy'
+}
+
+#main {
+	background-image: url(IMG_0660.jpg);
+	background-size: 50%;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding:10%;	
+	padding:5%;	
 	box-shadow: 5px 5px 5px gray;
-	background-color: aqua;
+	background-color: bisque;
 	border: 3px inset white;
-	width:60%;
-	margin-top: 10%;
-	margin-left: 15%;
-	margin-right: auto;
-position:absolute;}
-	
+	width:600px;
+	margin:10% auto;
+}
 
-#main > div{
+#main > div { 
 	position:relative;
 	width:60%;
 	margin-left: auto;
@@ -23,7 +26,8 @@ position:absolute;}
 	text-align: center;
 	box-shadow: 0px 0px 100px white;
 	padding:10px 0px;
-	}
+}
+
 #main h1 {
 	color:purple;
 	padding: 10px;
@@ -34,30 +38,36 @@ position:absolute;}
 	width:60%;
 	margin-left: auto;
 	margin-right: auto;
+}
 
-	}
 #input {
 	padding:50px;
 	padding-bottom:20px;
-	
+}
 
-	}
 #input input {
 	text-align: center;
 	width:60%;
-}	
-#error {display: none;
-color:purple;
-background-color: white;
-border:2px solid black;
-border-radius: 1em;margin-top: 5px;}
+}
+
+#error {
+	display: none;
+	color:purple;
+	background-color: white;
+	border:2px solid black;
+	border-radius: 1em;
+	margin-top: 5px;
+}
+
 #list {
 	position:center;
 	width:60%;
 	margin:0 auto;
 	padding-top:20px ;
-	}	
-.item {cursor:pointer;
+}
+
+.item {
+	cursor:pointer;
 	padding:5px 0px;
 	background-color: yellow;
 	border: 2px solid black;
@@ -68,20 +78,36 @@ border-radius: 1em;margin-top: 5px;}
 .item:before {
 	content: " \2003";
     position: relative;
-	}
-.item p {
-	display:inline;padding-right: 10px;
-	}
-.item:first-child{
-	border-top: 2px solid black;
-	}
+}
 
-i {float: right;margin-right: 5px;}
-.strike {background-color:green; 
-	}
+.item p {
+	display:inline;
+	padding-right: 10px;
+}
+
+.item:first-child {
+	border-top: 2px solid black;
+}
+
+i {
+	float: right;
+	margin-right: 5px;
+}
+
+.strike {
+	background-color:green; 
+}
+
 .strike:before {
     content: "\2713";
     position: relative;
    color:red;
 }
 
+@media all and (max-width: 600px) {
+	#main {
+		background-image: url();
+		padding:5px;
+		width:100%;
+	}
+}
