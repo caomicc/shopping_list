@@ -13,3 +13,22 @@
  */
 @import "bourbon";
 @import "neat";
+@import "font-awesome";
+
+body{
+  @include outer-container;
+  #input{
+    @include span-columns(4);
+  }
+  #list {
+    @include span-columns(4);
+  }
+}
+#main > div {
+  @include row
+}
+.item{
+  p,i {
+    display:inline;
+  }
+}

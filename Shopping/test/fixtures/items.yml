@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  item: MyString
+  name: MyString
   checked: false
+  comment: MyString
+  cost: 1
 
 two:
-  item: MyString
+  name: MyString
   checked: false
+  comment: MyString
+  cost: 1

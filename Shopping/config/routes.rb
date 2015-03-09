@@ -1,13 +1,6 @@
 Rails.application.routes.draw do
-  get 'items/:index'
-
-  get 'items/:show'
-
-  get 'items/:new'
-
-  get 'items/:edit'
-
-  get 'items/:delete'
+  root 'items#index'
+  resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
