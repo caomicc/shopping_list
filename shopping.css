@@ -2,3 +2,84 @@ body {
 
 	font-family: 'Luckiest Guy'
 }
+header{
+	background-color:#ffe;
+}
+h1{
+	margin-top:75px;
+	margin-bottom:50px;
+}
+form{
+	margin-top:20px;
+	margin-bottom:40px;
+}
+.instructions{
+	position: fixed;
+	top:75px;
+	left:-310px;
+	border:2px solid blue;
+	background-color:white;
+	width:310px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.instructions.open{
+	left:0;
+}
+.instructions ul{
+	list-style-type: none;
+	padding: 10px 20px;
+	text-align: left;
+}
+.instructions ul li{margin:5px 0;}
+.instructions i{
+	background-color:blue;
+	padding:5px;
+	font-size:30px;
+	position: absolute;
+	top:-2px;
+	right:-39px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	color:white;
+	cursor:pointer;	 
+}
+#sortable {
+	list-style:none;
+}
+#sortable li{
+	padding:15px 10px;
+	border:1px solid gray;
+	margin-bottom:5px;
+	box-shadow:1px 1px 15px -6px rgba(0,0,0,.5);
+}
+#sortable li:hover{
+	box-shadow:2px 2px 15px -4px rgba(0,0,0,.7);
+}
+#sortable li a:hover{
+	text-decoration: none;
+}
+#sortable li i{
+	cursor:pointer;
+}
+#sortable li.inactive{
+	background-color:rgba(0,0,0,.1);
+}
+#sortable li.inactive  a{
+	color:gray;
+	text-decoration: line-through;
+}
+.rowHeading{
+	background-color:rgba(0,0,0,.3);
+	margin-bottom:20px;
+}
+.rowHeading p {
+	display:inline;
+	cursor:pointer;
+	margin-left:45px;
+}
+.rowHeading p:hover{
+	color:white;
+}

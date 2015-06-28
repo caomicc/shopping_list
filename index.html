@@ -10,12 +10,32 @@
 	<link rel="stylesheet" href="shopping.css">
 </head>
 <body>
+	<header class="container-fluid text-center">
+		<h1>Shopping List</h1>
+		<div class="instructions open">
+			<i class="fa fa-wrench"></i>
+			<ul>
+				<li>Add new items to the list</li>
+				<li>Use the checkbox to select items and mark them complete, or double click the item</li>
+				<li>Delete items with the trash icon, or the checkbox</li>
+				<li>Edit items with the pencil icon</li>
+				<li>Drag items up and down the list to sort</li>
+			</ul>
+		</div>
+	</header>
 	<div class="container-fluid">
 		<div class="col-md-6 col-md-offset-3">
-			<form action=""><input type="text" id="newItem"><button class="submit"></button></form>
+			<form class="col-sm-12 text-center"><input class="col-md-8" type="text" id="newItem"><button class="col-md-2 col-md-offset-1 submit">Add!</button></form>
 		</div>
 	</div>
 	<div class="container-fluid">
+		<div class="rowHeading col-md-6 col-md-offset-3">
+			
+			<p id="checkAll">Check all</p>
+			<p id="uncheckAll">Uncheck all</p>
+			<p id="deleteSelection">Delete</p>
+			<p id="makeInactive">Toggle Complete</p>
+		</div>
 		<ul class="col-md-6 col-md-offset-3" id="sortable"></ul>
 	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
